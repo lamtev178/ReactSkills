@@ -27,9 +27,7 @@ ul {
 }
 .container {
   margin: 0px;
-  background-color: #282c34;
   height: 100vh;
-  color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -37,9 +35,7 @@ ul {
 }
 .lolo {
   padding: 50px 0 0 50px;
-  background-color: #2653ac;
   width: 40%;
-  color: white;
   min-height: 350px;
 }
 .stiky {
@@ -49,16 +45,6 @@ ul {
   position: sticky;
   top: 100px;
   z-index: 1;
-}
-.time-component {
-  background-color: #2653ac;
-  height: 300px;
-  width: 40%;
-  color: white;
-  min-height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .footer {
   height: 100px;
@@ -75,7 +61,39 @@ ul {
   left: 0;
   height: 100px;
   background-color: #19356d;
-  color: white;
   font-size: 25px;
   z-index: 10;
+}
+
+.blue {
+  background-color: #2653ac;
+  color: white;
+}
+.white {
+  background-color: #cbd1dd;
+  color: black;
+}
+.container-white {
+  color: black;
+  background-color: #f1f1f1;
+}
+.container-blue {
+  color: white;
+  background-color: #282c34;
+}
+.footer-white {
+  color: black;
+  background-color: #9ea0a7;
+}
+.footer-blue {
+  color: white;
+  background-color: #19356d;
+}
+.header-white {
+  color: black;
+  background-color: #9ea0a7;
+}
+.header-blue {
+  color: white;
+  background-color: #19356d;
 }

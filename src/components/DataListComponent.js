@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Button from './UI/button/MyButton';
 import Input from './UI/input/MyInput';
+import {themeContext} from './context'
 
 function DataList(){  
   const {useState} = React
+  const {theme} = useContext(themeContext)
   const data = [
     {id : '1', name: 'Alex'},
     {id : '2', name: 'Djohn'},
@@ -17,13 +19,12 @@ function DataList(){
   function handleChange(event){
     setInputValue(event.target.value)
   }
-  console.log(inputValue);
   function handleClick(){
     setActiveUser(data.filter((user) => {return user.name.toUpperCase().startsWith(inputValue.toUpperCase())}))
   }   
   return(
-    <div className='container'>
-      <div className='lolo'>
+    <div className={`container container-${theme}`}>
+      <div className={`lolo ${theme}`}>
         <Input type='text' value={inputValue} onChange={handleChange}/>
         <Button onClick={handleClick}>Найти</Button>
         <ul>
@@ -35,7 +36,7 @@ function DataList(){
         </ul>
       </div>
       <div className='stiky'>
-        <h1>Search Some Data</h1>
+        <h1>Search Data</h1>
       </div>
     </div>
 )}

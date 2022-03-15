@@ -1,29 +1,14 @@
+$DarkBlue: #19356d;
+$Blue: #2653ac;
+$DarkGreen: #9ea0a7;
+$LigthGreen: #cbd1dd;
+$BackgroundLight: #f1f1f1;
+$BackgroundDark: #282c34;
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 ul {
   list-style: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 .container {
   margin: 0px;
@@ -48,8 +33,7 @@ ul {
 }
 .footer {
   height: 100px;
-  background-color: #19356d;
-  color: white;
+  background-color: $DarkBlue;
   font-size: 25px;
 }
 .header {
@@ -60,40 +44,38 @@ ul {
   top: 0;
   left: 0;
   height: 100px;
-  background-color: #19356d;
+  background-color: $DarkBlue;
   font-size: 25px;
   z-index: 10;
 }
 
 .blue {
-  background-color: #2653ac;
-  color: white;
+  background-color: $Blue;
 }
 .white {
-  background-color: #cbd1dd;
-  color: black;
+  background-color: $LigthGreen;
 }
 .container-white {
   color: black;
-  background-color: #f1f1f1;
+  background-color: $BackgroundLight;
 }
 .container-blue {
   color: white;
-  background-color: #282c34;
+  background-color: $BackgroundDark;
 }
 .footer-white {
   color: black;
-  background-color: #9ea0a7;
+  background-color: $DarkGreen;
 }
 .footer-blue {
   color: white;
-  background-color: #19356d;
+  background-color: $DarkBlue;
 }
 .header-white {
   color: black;
-  background-color: #9ea0a7;
+  background-color: $DarkGreen;
 }
 .header-blue {
   color: white;
-  background-color: #19356d;
+  background-color: $DarkBlue;
 }

@@ -13,7 +13,6 @@ function Todo(){
   },[])
   useEffect(()=>{
     localStorage.setItem('data', JSON.stringify(data))
-    console.log(data);
   },[data])
   function addTodo(){
     setData([...data,{id : Date.now(), message:inputvalue}])
